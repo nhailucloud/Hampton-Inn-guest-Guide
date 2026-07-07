@@ -1,3 +1,0 @@
-document.querySelectorAll('.faq button').forEach(btn=>{btn.addEventListener('click',()=>btn.classList.toggle('open'))});
-const cards=document.querySelectorAll('.quick-card,.panel,.cards article');
-const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.animate([{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'translateY(0)'}],{duration:450,fill:'both'});io.unobserve(e.target)}})},{threshold:.08});cards.forEach(c=>io.observe(c));
