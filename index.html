@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hampton Inn Guest Guide | Alexandria / Pentagon South</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">
+        <div class="logo">H</div>
+        <div>
+          <p class="eyebrow">Hampton Inn by Hilton</p>
+          <h1>Alexandria / Pentagon South</h1>
+        </div>
+      </div>
+      <a class="call-btn" href="tel:7036714800">Call Front Desk</a>
+    </nav>
+
+    <section class="hero-content">
+      <p class="script">Welcome!</p>
+      <h2>We’re happy you’re here.</h2>
+      <p class="hero-text">
+        Scan, tap, and find nearby food, Metro stations, stores, hotel amenities,
+        and answers to the most common guest questions.
+      </p>
+      <div class="address">📍 4800 Leesburg Pike, Alexandria, VA 22302</div>
+      <div class="quick-row">
+        <a href="#food">🍽 Food</a>
+        <a href="#transportation">🚇 Metro</a>
+        <a href="#stores">🛒 Stores</a>
+        <a href="#traffic">🚦 Traffic</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section quick-answers">
+      <div class="section-title">
+        <span>⚡</span>
+        <div>
+          <p class="eyebrow">Quick Answers</p>
+          <h2>Find what you need in one tap</h2>
+        </div>
+      </div>
+
+      <div class="answer-grid">
+        <a class="answer-card orange" href="#food"><span>🍽</span><strong>Need food?</strong><p>Restaurants within walking distance and short drive.</p></a>
+        <a class="answer-card blue" href="#transportation"><span>🚇</span><strong>Closest Metro?</strong><p>Stations, parking, and best ways to get there.</p></a>
+        <a class="answer-card green" href="#stores"><span>🛒</span><strong>Need a store?</strong><p>Groceries, pharmacy, snacks, and laundry nearby.</p></a>
+        <a class="answer-card purple" href="#hotel"><span>🍪</span><strong>Hotel perks</strong><p>Cookies, breakfast, Wi‑Fi, water, vending, and ice.</p></a>
+        <a class="answer-card teal" href="#traffic"><span>🚦</span><strong>Morning traffic</strong><p>Tips for leaving during weekday rush hour.</p></a>
+        <a class="answer-card red" href="#faq"><span>❓</span><strong>FAQs</strong><p>Answers to common guest questions.</p></a>
+      </div>
+    </section>
+
+    <section id="hotel" class="section">
+      <div class="section-title">
+        <span>🏨</span>
+        <div>
+          <p class="eyebrow">Hotel Information</p>
+          <h2>Everything you need during your stay</h2>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card"><span>🕒</span><h3>Check‑In</h3><p>3:00 PM</p></div>
+        <div class="info-card"><span>🕛</span><h3>Check‑Out</h3><p>12:00 PM</p></div>
+        <div class="info-card"><span>🥞</span><h3>Breakfast</h3><p>6:00 AM – 10:00 AM</p></div>
+        <div class="info-card"><span>🅿️</span><h3>Parking</h3><p>Free parking for guests.</p></div>
+        <div class="info-card"><span>📶</span><h3>Wi‑Fi Login</h3><p>Use your last name and room number.</p></div>
+        <div class="info-card"><span>💧</span><h3>Complimentary Water</h3><p>2 bottles are given at check‑in.</p></div>
+        <div class="info-card"><span>🍪</span><h3>Cookies</h3><p>Fresh baked cookies at 5:00 PM.</p></div>
+        <div class="info-card"><span>☕</span><h3>Coffee & Tea</h3><p>Available 24/7 in the lobby.</p></div>
+        <div class="info-card"><span>🥤</span><h3>Vending</h3><p>Located on the 1st, 3rd, and 4th floors.</p></div>
+        <div class="info-card"><span>🧊</span><h3>Ice & Water</h3><p>2nd floor, in front of room 213, lobby floor short hallway.</p></div>
+      </div>
+    </section>
+
+    <section id="food" class="section">
+      <div class="section-title">
+        <span>🍽</span>
+        <div>
+          <p class="eyebrow">Food Nearby</p>
+          <h2>Walking distance and short drive options</h2>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="walk">Walking</button>
+        <button class="tab" data-filter="fast">Fast Food</button>
+        <button class="tab" data-filter="restaurant">Restaurants</button>
+      </div>
+
+      <div class="card-grid food-grid">
+        <article class="place-card" data-tags="walk restaurant mexican">
+          <div class="photo mexican">🌮</div>
+          <h3>La Terraza</h3>
+          <p>Mexican • Popular local option</p>
+          <div class="meta">🚶 3 min walk • 📍 0.1 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=La+Terraza+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a>
+        </article>
+
+        <article class="place-card" data-tags="walk fast">
+          <div class="photo fast">🍔</div>
+          <h3>Fast Food Row</h3>
+          <p>McDonald’s, Domino’s, Hunan Cafe, Wendy’s, Taco Bell, Popeyes, Silver Diner</p>
+          <div class="meta">🚶 6 min walk • 📍 0.2 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=restaurants+near+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a>
+        </article>
+
+        <article class="place-card" data-tags="walk restaurant steak">
+          <div class="photo steak">🥩</div>
+          <h3>Edy’s Chicken & Steak</h3>
+          <p>Chicken and steak restaurant</p>
+          <div class="meta">🚶 10 min walk • 🚗 2 min drive • 📍 0.4 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Edy's+Chicken+and+Steak+Alexandria+VA" target="_blank">Open in Maps</a>
+        </article>
+
+        <article class="place-card" data-tags="walk restaurant steak">
+          <div class="photo dining">🍝</div>
+          <h3>LongHorn Steakhouse & Olive Garden</h3>
+          <p>Casual sit-down restaurants</p>
+          <div class="meta">🚶 15 min walk • 🚗 3 min drive • 📍 0.6 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=LongHorn+Steakhouse+Olive+Garden+near+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a>
+        </article>
+
+        <article class="place-card" data-tags="restaurant chinese">
+          <div class="photo buffet">🥢</div>
+          <h3>Golden Buffet</h3>
+          <p>Chinese buffet • All you can eat</p>
+          <div class="meta">🚶 20 min walk • 🚗 4 min drive • 📍 0.8 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Golden+Buffet+Alexandria+VA" target="_blank">Open in Maps</a>
+        </article>
+
+        <article class="place-card" data-tags="walk restaurant pizza ethiopian">
+          <div class="photo pizza">🍕</div>
+          <h3>Stone Hot Pizza & Ethiopian Restaurants</h3>
+          <p>Pizza and nearby Ethiopian food options</p>
+          <div class="meta">🚶 16 min walk • 🚗 4 min drive • 📍 0.7 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Stone+Hot+Pizza+Ethiopian+restaurants+Alexandria+VA" target="_blank">Open in Maps</a>
+        </article>
+
+        <article class="place-card" data-tags="restaurant">
+          <div class="photo village">🍴</div>
+          <h3>Village at Shirlington</h3>
+          <p>Over 12 restaurants and a great dinner area</p>
+          <div class="meta">🚗 7 min drive • 📍 1.6 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Village+at+Shirlington" target="_blank">Open in Maps</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="transportation" class="section">
+      <div class="section-title">
+        <span>🚇</span>
+        <div>
+          <p class="eyebrow">Transportation</p>
+          <h2>Metro stations and getting around</h2>
+        </div>
+      </div>
+
+      <div class="note">Hotel shuttle is not available. Uber and Lyft are recommended. Bus stops are a short walk away; use Google Maps for real-time routes.</div>
+
+      <div class="card-grid">
+        <article class="place-card featured">
+          <div class="photo metro">🚇</div>
+          <h3>Van Dorn Street Metro</h3>
+          <p>Recommended Metro option</p>
+          <div class="meta">📍 3.2 mi • 🅿 Free parking lot</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Van+Dorn+Street+Metro+Station" target="_blank">Open in Maps</a>
+        </article>
+
+        <article class="place-card">
+          <div class="photo metro2">🚉</div>
+          <h3>Pentagon City Metro</h3>
+          <p>Garage parking at the mall; not free unless validated.</p>
+          <div class="meta">📍 3.1 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pentagon+City+Metro+Station" target="_blank">Open in Maps</a>
+        </article>
+
+        <article class="place-card">
+          <div class="photo metro3">🚉</div>
+          <h3>Ballston Metro</h3>
+          <p>Parking unknown; check before leaving.</p>
+          <div class="meta">📍 2.6 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ballston+Metro+Station" target="_blank">Open in Maps</a>
+        </article>
+
+        <article class="place-card">
+          <div class="photo metro4">🚉</div>
+          <h3>King Street Metro</h3>
+          <p>Parking varies; check before leaving.</p>
+          <div class="meta">📍 3.7 mi</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=King+Street+Metro+Station+Alexandria+VA" target="_blank">Open in Maps</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="stores" class="section">
+      <div class="section-title">
+        <span>🛒</span>
+        <div>
+          <p class="eyebrow">Stores & Essentials</p>
+          <h2>Groceries, snacks, pharmacy, and laundry</h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="place-card"><div class="photo store">🎯</div><h3>Target</h3><p>Travel essentials, toiletries, snacks, and general shopping.</p><div class="meta">📍 0.5 mi</div><a href="https://www.google.com/maps/search/?api=1&query=Target+near+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a></article>
+        <article class="place-card"><div class="photo grocery">🥬</div><h3>Harris Teeter</h3><p>Closest full grocery option.</p><div class="meta">📍 0.3 mi</div><a href="https://www.google.com/maps/search/?api=1&query=Harris+Teeter+near+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a></article>
+        <article class="place-card"><div class="photo grocery2">🛍</div><h3>Giant</h3><p>Groceries and household items.</p><div class="meta">📍 0.6 mi</div><a href="https://www.google.com/maps/search/?api=1&query=Giant+Food+near+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a></article>
+        <article class="place-card"><div class="photo grocery3">🛒</div><h3>Aldi</h3><p>Budget-friendly groceries.</p><div class="meta">📍 1.1 mi</div><a href="https://www.google.com/maps/search/?api=1&query=Aldi+near+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a></article>
+        <article class="place-card"><div class="photo pharmacy">💊</div><h3>CVS</h3><p>Pharmacy, medicine, toiletries, and snacks.</p><div class="meta">📍 1.0 mi</div><a href="https://www.google.com/maps/search/?api=1&query=CVS+near+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a></article>
+        <article class="place-card"><div class="photo convenience">🥤</div><h3>7‑Eleven</h3><p>Snacks, drinks, coffee, and quick essentials.</p><div class="meta">📍 0.2 mi</div><a href="https://www.google.com/maps/search/?api=1&query=7-Eleven+near+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a></article>
+        <article class="place-card"><div class="photo laundry">🧺</div><h3>Public Laundry</h3><p>Nearby self-service laundry option.</p><div class="meta">📍 0.2 mi</div><a href="https://www.google.com/maps/search/?api=1&query=laundromat+near+4800+Leesburg+Pike+Alexandria+VA" target="_blank">Open in Maps</a></article>
+      </div>
+    </section>
+
+    <section id="traffic" class="section split">
+      <div>
+        <div class="section-title">
+          <span>🚦</span>
+          <div>
+            <p class="eyebrow">Morning Traffic</p>
+            <h2>Plan ahead on weekday mornings</h2>
+          </div>
+        </div>
+        <p class="large-text">
+          Weekday traffic toward Washington, DC and nearby business areas can be heavier during morning rush hour.
+          For the best experience, check live directions before leaving and allow extra time during 7:00–9:00 AM.
+        </p>
+        <a class="primary" href="https://www.google.com/maps/dir/?api=1&origin=4800+Leesburg+Pike+Alexandria+VA" target="_blank">Check Live Traffic</a>
+      </div>
+      <div class="traffic-card">
+        <span>🚗</span>
+        <h3>Front Desk Tip</h3>
+        <p>Use Uber/Lyft or Google Maps for real-time travel estimates before leaving the hotel.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="section-title">
+        <span>❓</span>
+        <div>
+          <p class="eyebrow">Frequently Asked Questions</p>
+          <h2>Common guest questions</h2>
+        </div>
+      </div>
+
+      <div class="faq">
+        <details><summary>Is parking free?</summary><p>Yes, guest parking is free.</p></details>
+        <details><summary>What time is breakfast?</summary><p>Breakfast is served from 6:00 AM to 10:00 AM.</p></details>
+        <details><summary>How do I connect to Wi‑Fi?</summary><p>Use your last name and room number to log in.</p></details>
+        <details><summary>Where can I buy snacks?</summary><p>7‑Eleven is about 0.2 miles away. Vending machines are also located on the 1st, 3rd, and 4th floors.</p></details>
+        <details><summary>Where is the closest grocery store?</summary><p>Harris Teeter is about 0.3 miles away.</p></details>
+        <details><summary>Where is the closest Metro?</summary><p>Ballston Metro is 2.6 miles away, Pentagon City is 3.1 miles, and Van Dorn Street is 3.2 miles with free parking.</p></details>
+        <details><summary>Does the hotel have a shuttle?</summary><p>No, the hotel does not have a shuttle. Uber and Lyft are recommended.</p></details>
+        <details><summary>Where is ice and water?</summary><p>Ice and water are on the 2nd floor in front of room 213, lobby floor short hallway.</p></details>
+        <details><summary>When are cookies available?</summary><p>Fresh baked cookies are placed out at 5:00 PM.</p></details>
+        <details><summary>Is coffee available all day?</summary><p>Yes, coffee and tea are available 24/7.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Hampton Inn Alexandria / Pentagon South</strong>
+      <p>4800 Leesburg Pike, Alexandria, VA 22302</p>
+    </div>
+    <a href="tel:7036714800">📞 703‑671‑4800</a>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top">↑</button>
+</body>
+</html>
