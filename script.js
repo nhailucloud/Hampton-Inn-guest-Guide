@@ -1,20 +1,15 @@
-const tabs = document.querySelectorAll('.tab');
-const cards = document.querySelectorAll('.food-grid .place-card');
+# Hampton Connect V3
 
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-    const filter = tab.dataset.filter;
-    cards.forEach(card => {
-      const tags = card.dataset.tags || '';
-      card.style.display = filter === 'all' || tags.includes(filter) ? 'flex' : 'none';
-    });
-  });
-});
+A polished, mobile-first digital guest guide for Hampton Inn Alexandria / Pentagon South.
 
-const topBtn = document.querySelector('.to-top');
-window.addEventListener('scroll', () => {
-  topBtn.classList.toggle('show', window.scrollY > 500);
-});
-topBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+## How to preview
+Open `index.html` in a browser.
+
+## How to use the real hotel photo
+Replace `assets/hotel-hero.jpg` with an approved real photo of the hotel. Keep the filename exactly the same.
+
+## How to publish on GitHub Pages
+Upload all files to the root of your GitHub Pages repository, replacing the old files. Your existing Pages link should update after GitHub finishes publishing.
+
+## Notes
+Before guests use this, confirm breakfast hours, pet policy, pool status, request buttons, and any operational details with management.
